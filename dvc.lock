@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  describe:
+    cmd: python3 starts.py Stars.csv
+    deps:
+    - path: Stars.csv
+      md5: 2f852b8535662b928e423b49a9680d4d
+      size: 8421
+    - path: starts.py
+      md5: af226a07019219d515c604e8c163d75a
+      size: 662
+    outs:
+    - path: metastar.json
+      md5: fc27ccb86eb4994162ccbc7759dcc10b
+      size: 702
