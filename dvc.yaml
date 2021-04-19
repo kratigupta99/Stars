@@ -6,3 +6,10 @@ stages:
     - starts.py
     outs:
     - metastar.json
+  createDatapackage:
+    cmd: python3 stardatapackage.py Stars.csv
+    deps:
+    - Stars.csv
+    - stardatapackage.py
+    outs:
+    - datapackage.json
