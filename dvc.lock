@@ -13,3 +13,16 @@ stages:
     - path: metastar.json
       md5: fc27ccb86eb4994162ccbc7759dcc10b
       size: 702
+  createDatapackage:
+    cmd: python3 stardatapackage.py Stars.csv
+    deps:
+    - path: Stars.csv
+      md5: 2f852b8535662b928e423b49a9680d4d
+      size: 8421
+    - path: stardatapackage.py
+      md5: 3def6b4b07f64d03a4e94a02a91da8ac
+      size: 116
+    outs:
+    - path: datapackage.json
+      md5: 606cad5f666d7b1ecd8e31817c8fea75
+      size: 1720
