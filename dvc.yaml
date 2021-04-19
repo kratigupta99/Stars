@@ -1,0 +1,8 @@
+stages:
+  describe:
+    cmd: python3 starts.py Stars.csv
+    deps:
+    - Stars.csv
+    - starts.py
+    outs:
+    - metastar.json
